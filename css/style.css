@@ -406,6 +406,30 @@ h1, h2, h3, h4, h5,
 .overlap-to-top {
   margin-top: -150px; }
 
+  .leftside{
+    padding-left: 0px;
+    margin-left: 0px;
+    top: 30%;
+    position: fixed;
+    z-index: 999;
+    background:rgb(211,211,211,0.7);
+    border-radius: 5px;
+}
+.leftside li{
+    list-style-type: none;
+    margin-left: 0px;
+    transition: .1s;
+    padding-left: 0px;
+    position: relative;
+    margin-top: 10px;   
+}
+.leftside li i{
+    font-size: 25px;
+    color: black;
+    margin-left: 0px;
+    padding: 20px;
+    padding-left: 12px;
+}
 .ul-check {
   margin-bottom: 50px; }
   .ul-check li {
