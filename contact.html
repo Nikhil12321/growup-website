@@ -3,6 +3,9 @@
 
 <head>
     <title>Contact Us</title>
+    <link rel = "icon" type = "image/png" href = "./images/logo_title.png">
+    <!-- For apple devices -->
+    <link rel = "apple-touch-icon" type = "image/png" href = "./images/logo.png"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -45,7 +48,7 @@
 
 
             <div class="site-logo">
-              <!-- <a href="index.html" class="text-black"><span class="text-primary">GrowUp</a> -->
+               <a href="index.html" class="text-black"><span class="text-primary">Growup</a>
                 <!-- <img src="images/logo.png" class="img-responsive"> -->
             </div>
 
@@ -293,44 +296,46 @@
                                     <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
                                         <div class="block-heading-1">
                                             <h2>Contact Us</h2>
+                                            <p>To find out more about us and our virtual employee outsourcing processes and business, 
+                                                just share your details and we will get back to you.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row justify-content-center">
-                                    <div class="col-lg-10 mb-5" data-aos="fade-up" data-aos-delay="100">
-                                        <form action="#" method="post">
+                                    <div class="col-lg-10 mb-5 gform" data-aos="fade-up" data-aos-delay="100">
+                                        <form  id="contactUsForm" method="post" action="https://script.google.com/a/vgrowup.com/macros/s/AKfycbxv_FCllPxvNN4hSo852e7A4oyvX8RYP3MvRc2zbg/exec">
                                             <div class="form-group row">
                                                 <div class="col-md-6 mb-4 mb-lg-0">
-                                                    <input type="text" class="form-control" placeholder="Name">
+                                                    <input type="text" class="form-control" name="name" placeholder="Name">
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <input type="text" class="form-control" placeholder="Company">
+                                                    <input type="text" class="form-control" name="company" placeholder="Company">
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
                                                 <div class="col-md-12">
-                                                    <input type="email" class="form-control" placeholder="Email address">
+                                                    <input type="email" class="form-control" name="email" placeholder="Email address">
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
                                                 <div class="col-md-12">
-                                                    <input type="phone" class="form-control" placeholder="Phone">
+                                                    <input type="phone" class="form-control" name="phone" placeholder="Phone">
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
                                                 <div class="col-md-12">
-                                                    <textarea name="" id="" class="form-control"
+                                                    <textarea id="" class="form-control" name="message"
                                                         placeholder="What services are you looking for?" cols="30"
                                                         rows="10"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-md-12 mr-auto">
-                                                    <input type="submit"
-                                                        class="btn btn-block btn-primary text-white py-3 px-5"
+                                                    <input type="submit" 
+                                                        class="btn btn-block btn-primary text-white py-3 px-5 submit"
                                                         value="Send Message">
                                                 </div>
                                             </div>
@@ -387,11 +392,11 @@
       
                   <div class="mb-5">
                     <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
-                    <form action="#" method="post" class="footer-suscribe-form">
+                    <form action="https://script.google.com/a/vgrowup.com/macros/s/AKfycbxK8-e6v4EHNZoTuGVhcqupK45rnheFA81_zYa7/exec" method="post" id="subscribeForm"  class="footer-suscribe-form">
                       <div class="input-group mb-3">
-                        <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                        <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2" name="email">
                         <div class="input-group-append">
-                          <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
+                          <input type="submit" class="btn btn-primary text-white" value="Subscribe">
                         </div>
                       </div>
                   </div>
@@ -405,7 +410,16 @@
                   </form>
                 </div>
               </div>
-      
+              <div class="row pt-5 mt-5 text-center">
+                  <div class="col-md-12">
+                    <div class="border-top pt-5">
+                      <p>
+                          Copyright @2019 Growup . All Rights Reserved
+                        </p>
+                    </div>
+                  </div>
+        
+                </div>
               </div>
             </div>
           </footer>
@@ -424,7 +438,6 @@
     <script src="js/aos.js"></script>
 
     <script src="js/main.js"></script>
-
 
 </body>
 

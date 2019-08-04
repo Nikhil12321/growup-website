@@ -122,8 +122,34 @@ jQuery(document).ready(function($) {
 	};
 	// siteSliderRange();
 
+var frm = $('#contactUsForm');
+frm.submit(function (ev) {
+		$.ajax({
+				type: frm.attr('method'),
+				url: frm.attr('action'),
+				data: frm.serialize(),
+				success: function (data) {
+						alert('Thanks! We will get back to you shortly.');
+				}
+		});
+		ev.preventDefault();
+		$('#contactUsForm')[0].reset();
+});
 
-	
+// subscribeForm
+var subscribeForm = $('#subscribeForm');
+subscribeForm.submit(function (ev) {
+		$.ajax({
+				type: subscribeForm.attr('method'),
+				url: subscribeForm.attr('action'),
+				data: subscribeForm.serialize(),
+				success: function (data) {
+						alert('Thanks for subscribing!');
+				}
+		});
+		ev.preventDefault();
+		$('#subscribeForm')[0].reset();
+});
 
 	var siteCarousel = function () {
 		if ( $('.nonloop-block-13').length > 0 ) {
