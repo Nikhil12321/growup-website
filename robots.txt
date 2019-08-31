@@ -9,5 +9,3 @@ Disallow: /Client-Payment-URLs
 Disallow: /jap
 Disallow: /EventRegistration-Chennai_2015
 Disallow: /SSLAssistant
-Disallow: /EventRegistrationJul2015
-Disallow: /fairfaxJul2015
