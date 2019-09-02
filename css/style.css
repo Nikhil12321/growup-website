@@ -499,6 +499,13 @@ h1, h2, h3, h4, h5,
     @media (max-width: 991.98px) {
       .site-navbar .site-logo {
         float: left;
+        position: relative; }
+      .site-navbar .site-logo > a > img {
+        max-width: 100px; }
+      }
+    @media (max-width: 991.98px) {
+      .site-navbar .site-logo > a > img {
+        float: left;
         position: relative; } }
   .site-navbar .site-navigation.border-bottom {
     border-bottom: 1px solid white !important; }
